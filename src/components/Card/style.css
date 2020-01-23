@@ -1,0 +1,44 @@
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.card-box {
+  background-color: white;
+  border-radius: 4px;
+  width: 100%;
+  padding: 8%;
+  box-shadow: 0 0 8px 0 rgba(51, 51, 51, 0.247);
+  margin-bottom: 5%;
+}
+
+.title {
+  color: #333;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.card-box .circle-icon {
+  width: 46px;
+  height: 46px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3%;
+}
+
+.title h2 {
+  font-size: 21px;
+}
+
+.circle-icon span {
+  color: #333;
+  font-size: 1.3em;
+}
