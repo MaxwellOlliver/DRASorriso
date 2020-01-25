@@ -19,31 +19,58 @@
         let scroll = document.documentElement.scrollTop;
         let nav = document.querySelector('#nav');
         let container = document.querySelector('.container');
+        let width = document.documentElement.clientWidth;
+
+        console.log(document.documentElement.scrollTop)
         
+        if (scroll < 80) {
+          nav.className = 'bg-azul-1 font-white';
+        }
         if (scroll > 80) {
           nav.className = 'bg-white shadow font-black';  
         }
-        if (scroll < 80) {
-          nav.className = 'bg-azul-1 font-white';
-          container.className = 'container bg-azul-1'; 
+
+        if(width >= 320) {
+          if (scroll > 600) {
+            container.className = 'container bg-azul-1'; 
+            // container.className = 'container bg-azul-4';
+          }
+          if (scroll > 800) {
+            container.className = 'container bg-azul-9';
+          }
+        } 
+        if (width >= 480) {
+
+          if (scroll < 1000) {
+            container.className = 'container bg-azul-1'; 
+            // container.className = 'container bg-azul-4';
+          }
+          if (scroll > 1000) {
+            container.className = 'container bg-azul-9';
+          }
+        }
+        if (width >= 768) {
+
+          if (scroll < 1400) {
+            container.className = 'container bg-azul-1'; 
+            // container.className = 'container bg-azul-4';
+          }
+          if (scroll > 1400) {
+            container.className = 'container bg-azul-9';
+          }
+        }
+        if (width >= 960) {
+
+          if (scroll < 1600) {
+            container.className = 'container bg-azul-1'; 
+            // container.className = 'container bg-azul-4';
+          }
+          if (scroll > 1800) {
+            container.className = 'container bg-azul-9';
+          }
         }
 
-        if (scroll > 500) {
-          container.className = 'container bg-azul-2';
         }
-        if (scroll > 600) {
-          container.className = 'container bg-azul-4';
-        }
-        if (scroll > 700) {
-          container.className = 'container bg-azul-6';
-        }
-        if (scroll > 800) {
-          container.className = 'container bg-azul-8';
-        }
-        if (scroll > 800) {
-          container.className = 'container bg-azul-9';
-        }
-      }
     </script>
   </body>
 </html>
