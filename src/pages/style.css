@@ -41,6 +41,15 @@ main {
   width: 100%;
 }
 
+main hr {
+  background-color: rgb(202, 202, 202);
+  height: 2px;
+  width: 80%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  opacity: 0;
+}
+
 /* FIRST SCREEN */
 .first-screen {
   display: flex;
@@ -79,6 +88,7 @@ main {
   transition: all .3s;
   font-weight: 700;
   margin-bottom: 30%;
+  text-decoration: none;
 }
 .btn-seeMore:hover {
   background-color: #97faf5;
@@ -112,7 +122,6 @@ main {
   align-items: center;
   padding: 0 5%;
   margin-bottom: 30%;
-  margin-top: 15%;
 }
 
 .team h3, .header-no-padding h3 {
@@ -323,13 +332,17 @@ main {
 .contact h3 {
   font-size: 22px;
   text-align: center;
-  margin-bottom: 10%;
+}
+
+.contact>span {
+  margin-bottom: 15%;
+  font-size: 14px;
+  color: #f5f5f5;
 }
 
 iframe {
   width: 100%;
   border-radius: 4px;
-  width: 100%;
   height: 200px;
   margin-bottom: 5%;
 }
@@ -371,6 +384,47 @@ footer {
   padding: 0 3%
 }
 
+/* INFORMATION */
+
+.information {
+  display: none;
+  position: fixed;
+  bottom: 1%;
+  left: 1%;
+  max-width: 20%;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  padding: 1% 2%;
+  border-radius: 4px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.218);
+}
+
+.information .svg-inline--fa.fa-times {
+  position: absolute;
+  right: 4%;
+  top: 4%;
+  cursor: pointer;
+}
+
+.information .title h3 {
+
+  margin-left: 7%;
+}
+
+.information .title {
+  color: #333;
+  margin-bottom: 10%;
+}
+
+.content-information {
+  width: 100%;
+  text-align: center;
+  padding: 3%;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  font-size: 14px;
+}
 
 
 /* Bg colors and others*/
@@ -430,4 +484,7 @@ footer {
     background-color: #afafaf;
   }
 
-    
+  .hide {
+    display: none;
+    visibility: hidden;
+  }

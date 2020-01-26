@@ -21,7 +21,13 @@ export default function Main() {
       s1.className = 'slide-gray'
     }
 
-    setTimeout(rateSlide, 6000)
+    setTimeout(rateSlide, 6000);
+
+  }
+  function hideWindow() {
+    let win = document.querySelector('.information');
+
+    win.classList.add('hide')
   }
   useEffect(rateSlide)
   return (
@@ -35,30 +41,33 @@ export default function Main() {
           <span>“Nada que você veste é mais importante que o seu sorriso.”</span>
           <span id="author">- Connie Stevens</span>
         </div>
-        <button className="btn-seeMore bg-white">Ver mais</button>
+        <a className="btn-seeMore bg-white" href="mailto:?cristiane@drasorriso.com.br">Enviar email</a>
         <div className="division">
           <h1>Sobre nós</h1>
         </div>
-        <Card
-          iconClass="fas fa-user-md" 
-          title="Experiência" 
-          content="Clinica fundada em 2011 no Tatuapé. Há mais de 5 anos atendendo com muita qualidade e experiência no mercado."
-        />
-        <Card
-          iconClass="fas fa-map-marker-alt" 
-          title="Localização" 
-          content="Contamos com duas unidades em São Paulo com excelentes equipamentos para melhor atendê-los"
-        />
-        <Card
-          iconClass="fab fa-accessible-icon" 
-          title="Acessibilidade" 
-          content="Atendimento especializado para pacientes com necessidades especiais"
-        />
-        {/* <Card
-          iconClass="fas fa-user-md" 
-          title="Experiência" 
-          content="Clinica fundada em 2011 no Tatuapé. Há mais de 5 anos atendendo com muita qualidade e experiência no mercado."
-        /> */}
+        <div className="about">
+          <Card
+            iconClass="fas fa-user-md" 
+            title="Experiência" 
+            content="Clínica fundada em 2011 no Tatuapé. Há mais de 5 anos atendendo com muita qualidade e experiência no mercado."
+          />
+          <Card
+            iconClass="fas fa-map-marker-alt" 
+            title="Localização" 
+            content="Contamos com duas unidades em São Paulo com excelentes equipamentos para melhor atendê-los"
+          />
+          <Card
+            iconClass="fab fa-accessible-icon" 
+            title="Acessibilidade" 
+            content="Atendimento especializado para pacientes com necessidades especiais"
+          />
+          {/* <Card
+            iconClass="fas fa-user-md" 
+            title="Experiência" 
+            content="Clinica fundada em 2011 no Tatuapé. Há mais de 5 anos atendendo com muita qualidade e experiência no mercado."
+          /> */}
+        </div>
+        <hr/>
         <div className="team">
           <h3>Conheça a equipe</h3>
           <span>Equipe de profissionais capacitados a fazer o melhor atendimento.</span>
@@ -107,6 +116,7 @@ export default function Main() {
         </div>
         <div className="contact">
           <h3>Contato</h3>
+          <span>Informações de contato e localização</span>
           <div className="unity">
             <div className="info">
               <div className="map-view">
@@ -141,6 +151,19 @@ export default function Main() {
           <span>&copy;RCAK - Informática</span>
         </footer>
       </main>
+      <div className="information">
+        <span onClick={hideWindow}><i className="fas fa-times"></i></span>
+        <div className="title">
+          {/* <span className="fas fa-phone-alt"></span> */}
+          <h3>Atendimento</h3>
+        </div>
+        <div className="content-information">
+          <h4>Butantã</h4>
+          <span>Terças e Quintas</span>
+          <h4>Tatuapé</h4>
+          <span>Quartas, Sextas e Sábados</span>
+        </div>
+      </div>
     </div>
   )
 }
