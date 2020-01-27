@@ -19,6 +19,8 @@
         let nav = document.querySelector('#nav');
         let container = document.querySelector('.container');
         let height = document.documentElement.clientHeight;
+        console.log(height)
+        console.log(scroll)
 
         
         if (scroll < 80) {
@@ -28,54 +30,54 @@
           nav.className = 'bg-white shadow font-black';
         }
 
-        if(height >= 480) {
-          if (scroll < 528) {
+        if(height >= 480 && height < 720) {
+          if (scroll < 480) {
             container.className = 'container bg-azul-1'; 
             // container.className = 'container bg-azul-4';
           }
-          if (scroll >= 528) {
+          if (scroll >= 480) {
             container.className = 'container bg-azul-9';
           }
         } 
-        if (768 > height >= 480) {
+        if (height >= 720 && height < 1050) {
 
-          if (scroll < 1000) {
+          if (scroll < 700) {
             container.className = 'container bg-azul-1'; 
             // container.className = 'container bg-azul-4';
           }
-          if (scroll > 1000) {
+          if (scroll > 700) {
             container.className = 'container bg-azul-9';
           }
         }
-        if ( 960 > height >= 768) {
+        // if ( 900 > height >= 720) {
 
-          if (scroll < 1400) {
-            container.className = 'container bg-azul-1'; 
-            // container.className = 'container bg-azul-4';
-          }
-          if (scroll > 1400) {
-            container.className = 'container bg-azul-9';
-          }
-        }
-        if ( height >= 625) {
+        //   if (scroll < 600) {
+        //     container.className = 'container bg-azul-1'; 
+        //     // container.className = 'container bg-azul-4';
+        //   }
+        //   if (scroll > 600) {
+        //     container.className = 'container bg-azul-9';
+        //   }
+        // }
+        // if ( height >= 1000) {
 
-          if (scroll < 500) {
-            container.className = 'container bg-azul-1'; 
-            // container.className = 'container bg-azul-4';
-          }
-          if (scroll >= 500) {
-            container.className = 'container bg-azul-9';
-          }
-        }
-        if (height >= 1268) {
-          if (scroll < 600) {
-            container.className = 'container bg-azul-1'; 
-            // container.className = 'container bg-azul-4';
-          }
-          if (scroll > 600) {
-            container.className = 'container bg-azul-9';
-          }
-        }
+        //   if (scroll < 700) {
+        //     container.className = 'container bg-azul-1'; 
+        //     // container.className = 'container bg-azul-4';
+        //   }
+        //   if (scroll >= 700) {
+        //     container.className = 'container bg-azul-9';
+        //   }
+        // }
+        // if (height >= 1268) {
+        //   if (scroll < 600) {
+        //     container.className = 'container bg-azul-1'; 
+        //     // container.className = 'container bg-azul-4';
+        //   }
+        //   if (scroll > 600) {
+        //     container.className = 'container bg-azul-9';
+        //   }
+        // }
 
         }
     </script>

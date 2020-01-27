@@ -34,7 +34,6 @@
 /*MAIN */
 
 main {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,13 +54,15 @@ main hr {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   width: 100%;
   color: white;
   padding: 3% 5%;
+  height: 100vh;
 }
 
 .first-screen h3 {
-  margin-top: 10%;
+  margin-top: 5%;
   font-size: 35px;
 }
 
@@ -80,14 +81,15 @@ main hr {
 /* BTN */
 .btn-seeMore {
   color: #333;
-  padding: 2% 10%;
+  width: 30%;
+  padding: 3% 0;
+  align-self: center;
   text-align: center;
+  font-size: 13px;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 8%;
   transition: all .3s;
-  font-weight: 700;
-  margin-bottom: 30%;
   text-decoration: none;
 }
 .btn-seeMore:hover {
@@ -116,7 +118,7 @@ main hr {
 /* ABOUT */
 
 .about {
-  width: 100%;
+  height: auto;
   background: linear-gradient(to right, #00c3ff46 0%, rgba(255, 255, 255, 0.878) 25%, rgba(255, 255, 255, 0.875) 70%, #00c3ff46 100%), url("../assets/pain-armchair-dentist-suffering-52527.jpg") center no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -263,7 +265,10 @@ main hr {
   width: 100%;
   height: 100%;
   position: absolute;
-  padding: 5%
+  padding: 5%;
+  background: url("../assets/quote.png") left no-repeat;
+  background-position: 2%;
+  background-size: 8%;
 }
 
 #rate-1 {
@@ -272,12 +277,14 @@ main hr {
   height: 140px;
   font-size: 16px;
   transition: all .5s;
+  text-align: right
 }
 
 #rate-2 {
   background-color: #ebebeb;
   height: 220px;
   transition: all .5s;
+  text-align: right
 }
 
 .mgl {
@@ -329,7 +336,8 @@ main hr {
   font-size: 14px;
   font-style: italic;
   font-weight: bold;
-  color: #333
+  color: #333;
+  text-align: right;
 }
 
 /* CONTACT */
@@ -507,7 +515,10 @@ footer {
     visibility: hidden;
   }
 
+  .team h3, .header-no-padding h3, .about h3, .services h3 {
+    font-size: 25px;
+  }
   .team h3, .header-no-padding h3, .about h3 {
-    color: #3eccc5;font-size: 35px;
+    color: #3eccc5;
   }
   

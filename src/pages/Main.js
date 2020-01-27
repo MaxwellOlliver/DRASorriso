@@ -40,8 +40,8 @@ export default function Main() {
           <h3>Seu sorriso é nossa<br/>maior prioridade.</h3>
           <span>“Nada que você veste é mais importante que o seu sorriso.”</span>
           <span id="author">- Connie Stevens</span>
+          <a className="btn-seeMore bg-white" href="mailto:?cristiane@drasorriso.com.br">Enviar email</a> 
         </div>
-        <a className="btn-seeMore bg-white" href="mailto:?cristiane@drasorriso.com.br">Enviar email</a>
         <div className="about">
           <h3>Sobre nós</h3>
           <div className="cards">
