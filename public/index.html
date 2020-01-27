@@ -18,25 +18,26 @@
         let scroll = document.documentElement.scrollTop;
         let nav = document.querySelector('#nav');
         let container = document.querySelector('.container');
-        let width = document.documentElement.clientWidth;
+        let height = document.documentElement.clientHeight;
+
         
         if (scroll < 80) {
           nav.className = 'bg-azul-1 font-white';
         }
         if (scroll > 80) {
-          nav.className = 'bg-white shadow font-black';  
+          nav.className = 'bg-white shadow font-black';
         }
 
-        if(width >= 320) {
-          if (scroll > 600) {
+        if(height >= 480) {
+          if (scroll < 528) {
             container.className = 'container bg-azul-1'; 
             // container.className = 'container bg-azul-4';
           }
-          if (scroll > 800) {
+          if (scroll >= 528) {
             container.className = 'container bg-azul-9';
           }
         } 
-        if (width >= 480) {
+        if (768 > height >= 480) {
 
           if (scroll < 1000) {
             container.className = 'container bg-azul-1'; 
@@ -46,7 +47,7 @@
             container.className = 'container bg-azul-9';
           }
         }
-        if (width >= 768) {
+        if ( 960 > height >= 768) {
 
           if (scroll < 1400) {
             container.className = 'container bg-azul-1'; 
@@ -56,18 +57,18 @@
             container.className = 'container bg-azul-9';
           }
         }
-        if (width >= 960) {
+        if ( height >= 625) {
 
-          if (scroll < 1600) {
+          if (scroll < 500) {
             container.className = 'container bg-azul-1'; 
             // container.className = 'container bg-azul-4';
           }
-          if (scroll > 1800) {
+          if (scroll >= 500) {
             container.className = 'container bg-azul-9';
           }
         }
-        if (width >= 1268) {
-          if (scroll < 400) {
+        if (height >= 1268) {
+          if (scroll < 600) {
             container.className = 'container bg-azul-1'; 
             // container.className = 'container bg-azul-4';
           }

@@ -42,25 +42,25 @@ export default function Main() {
           <span id="author">- Connie Stevens</span>
         </div>
         <a className="btn-seeMore bg-white" href="mailto:?cristiane@drasorriso.com.br">Enviar email</a>
-        <div className="division">
-          <h1>Sobre nós</h1>
-        </div>
         <div className="about">
-          <Card
-            iconClass="fas fa-user-md" 
-            title="Experiência" 
-            content="Clínica fundada em 2011 no Tatuapé. Há mais de 5 anos atendendo com muita qualidade e experiência no mercado."
-          />
-          <Card
-            iconClass="fas fa-map-marker-alt" 
-            title="Localização" 
-            content="Contamos com duas unidades em São Paulo com excelentes equipamentos para melhor atendê-los"
-          />
-          <Card
-            iconClass="fab fa-accessible-icon" 
-            title="Acessibilidade" 
-            content="Atendimento especializado para pacientes com necessidades especiais"
-          />
+          <h3>Sobre nós</h3>
+          <div className="cards">
+            <Card
+              iconClass="fas fa-user-md" 
+              title="Experiência" 
+              content="Clínica fundada em 2011 no Tatuapé. Há mais de 5 anos atendendo com muita qualidade e experiência no mercado."
+            />
+            <Card
+              iconClass="fas fa-map-marker-alt" 
+              title="Localização" 
+              content="Contamos com duas unidades em São Paulo com excelentes equipamentos para melhor atendê-los"
+            />
+            <Card
+              iconClass="fab fa-accessible-icon" 
+              title="Acessibilidade" 
+              content="Atendimento especializado para pacientes com necessidades especiais"
+            />
+          </div>
           {/* <Card
             iconClass="fas fa-user-md" 
             title="Experiência" 
@@ -84,7 +84,7 @@ export default function Main() {
             <li><span className="far fa-check-circle"></span><p>Clinica geral</p></li>
             <li><span className="far fa-check-circle"></span><p>Implantes</p></li>
             <li><span className="far fa-check-circle"></span><p>Tratamento facial</p></li>
-            <li><span className="far fa-check-circle"></span><p>Odontopediatria</p></li><br/>
+            <li><span className="far fa-check-circle"></span><p>Odontopediatria</p></li>
             <li><span className="far fa-check-circle"></span><p>Próteses</p></li>
             <li><span className="far fa-check-circle"></span><p>Ortodontia</p></li>
             <li><span className="far fa-check-circle"></span><p>Endodontia</p></li>
@@ -124,6 +124,7 @@ export default function Main() {
               </div>
               <h4>Unidade I - Metrô Tatuapé</h4>
               <span>Clínica Dra. Sorriso</span>
+              <span>Às Quartas, Sextas e Sábados</span>
               <span>Rua Padre Estevao Pernet, 160</span>  
               <span>03315-000 São Paulo</span>
               <h4>Informações de Contato:</h4>
@@ -138,6 +139,7 @@ export default function Main() {
               </div>
               <h4>Unidade II - Butantã</h4>
               <span>Clínica Dra. Sorriso</span>
+              <span>Às Terças e Quintas</span>
               <span>Rua Tomas Velasco, 60</span>  
               <span>05549-170 São Paulo</span>
               <h4>Informações de Contato:</h4>
