@@ -100,7 +100,7 @@ main hr {
 
 .about {
   height: auto;
-  background: linear-gradient(to right, #00c3ff46 0%, rgba(255, 255, 255, 0.878) 25%, rgba(255, 255, 255, 0.875) 70%, #00c3ff46 100%), url("../assets/pain-armchair-dentist-suffering-52527.jpg") center no-repeat;
+  background: linear-gradient(to right, #00c3ff46 0%, rgba(255, 255, 255, 0.878) 25%, rgba(255, 255, 255, 0.875) 70%, #00c3ff46 100%), url("../assets/adult.jpg") center no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 5% 10%;

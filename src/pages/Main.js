@@ -153,10 +153,9 @@ export default function Main() {
           <span>&copy;RCAK - Informática</span>
         </footer>
       </main>
-      <div className="information">
+      {/* <div className="information">
         <span onClick={hideWindow}><i className="fas fa-times"></i></span>
         <div className="title">
-          {/* <span className="fas fa-phone-alt"></span> */}
           <h3>Atendimento</h3>
         </div>
         <div className="content-information">
@@ -165,7 +164,7 @@ export default function Main() {
           <h4>Tatuapé</h4>
           <span>Quartas, Sextas e Sábados</span>
         </div>
-      </div>
-    </div>
+      </div>*/}
+    </div> 
   )
 }
