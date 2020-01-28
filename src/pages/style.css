@@ -93,26 +93,7 @@ main hr {
   text-decoration: none;
 }
 .btn-seeMore:hover {
-  background-color: #97faf5;
-}
-/* DIVISION */
-
-.division {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 20%;
-  margin-top: 10%;
-  padding: 3%;
-  background-color: #fff;
-}
-
-.division h1 {
-  font-size: 22px;
-  color: #333;
-  padding: 2%
+  background-color: #c6faf7;
 }
 
 /* ABOUT */

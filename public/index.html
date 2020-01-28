@@ -19,8 +19,6 @@
         let nav = document.querySelector('#nav');
         let container = document.querySelector('.container');
         let height = document.documentElement.clientHeight;
-        console.log(height)
-        console.log(scroll)
 
         
         if (scroll < 80) {
@@ -49,35 +47,16 @@
             container.className = 'container bg-azul-9';
           }
         }
-        // if ( 900 > height >= 720) {
+        if (height > 150) {
 
-        //   if (scroll < 600) {
-        //     container.className = 'container bg-azul-1'; 
-        //     // container.className = 'container bg-azul-4';
-        //   }
-        //   if (scroll > 600) {
-        //     container.className = 'container bg-azul-9';
-        //   }
-        // }
-        // if ( height >= 1000) {
-
-        //   if (scroll < 700) {
-        //     container.className = 'container bg-azul-1'; 
-        //     // container.className = 'container bg-azul-4';
-        //   }
-        //   if (scroll >= 700) {
-        //     container.className = 'container bg-azul-9';
-        //   }
-        // }
-        // if (height >= 1268) {
-        //   if (scroll < 600) {
-        //     container.className = 'container bg-azul-1'; 
-        //     // container.className = 'container bg-azul-4';
-        //   }
-        //   if (scroll > 600) {
-        //     container.className = 'container bg-azul-9';
-        //   }
-        // }
+          if (scroll < 750) {
+            container.className = 'container bg-azul-1'; 
+            // container.className = 'container bg-azul-4';
+          }
+          if (scroll > 750) {
+            container.className = 'container bg-azul-9';
+          }
+        }
 
         }
     </script>
