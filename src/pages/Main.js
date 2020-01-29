@@ -24,11 +24,11 @@ export default function Main() {
     setTimeout(rateSlide, 6000);
 
   }
-  function hideWindow() {
-    let win = document.querySelector('.information');
+  // function hideWindow() {
+  //   let win = document.querySelector('.information');
 
-    win.classList.add('hide')
-  }
+  //   win.classList.add('hide')
+  // }
   useEffect(rateSlide)
   return (
     <div className="container bg-azul-1">
